@@ -38,21 +38,40 @@
 // line
 // string.`);
 
-const age = 15;
+// const age = 15;
 
-if (age >= 18) {
-    console.log(`Sarah can start getting her driver's license!`);
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
-}
+// if (age >= 18) {
+//     console.log(`Sarah can start getting her driver's license!`);
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
+// }
 
-const birthYear = 2012;
-let century;
+// const birthYear = 2012;
+// let century;
 
-if (birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-}
-console.log(century);
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+// console.log(century);
+
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+// type coercion
+console.log('I am ' + 23 + ' years old.')
+// is the same as writing:
+console.log('I am ' + '23' + ' years old.')
+// strings to numbers because of the -
+console.log('23' - '3' - 10);
+// the + causes concatonation
+console.log('23' + '3' + 10);
+// the * multiples because js knows it is a math operation
+console.log('28' * '2');
+// same is true for / division
+console.log('28' / '2');

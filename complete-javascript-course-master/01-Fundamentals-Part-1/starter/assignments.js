@@ -26,17 +26,23 @@
 // const description = country + ' ' + 'is' + ' ' + 'in' + ' ' + continent + ',' + ' and its' + ' ' + population + ' ' + 'million people speak' + ' ' + language;
 // console.log(description);
 
-let country = 'United States';
-let continent = 'North America';
-let population = 130;
-let language = 'English';
+// let country = 'United States';
+// let continent = 'North America';
+// let population = 130;
+// let language = 'English';
 
-const description = `${country} is in ${continent} and its ${population} million people speak the ${language} language.`;
-console.log(description);
+// const description = `${country} is in ${continent} and its ${population} million people speak the ${language} language.`;
+// console.log(description);
 
-if (population > 33) {
-    console.log(`${country}'s population is above average.`)
-} else {
-    const populationLess = 33 - population;
-    console.log(`${country}'s population is ${populationLess} million below average.`)
-}
+// if (population > 33) {
+//     console.log(`${country}'s population is above average.`)
+// } else {
+//     const populationLess = 33 - population;
+//     console.log(`${country}'s population is ${populationLess} million below average.`)
+// }
+
+console.log('9' - '5');
+console.log('19' - '13' + '17');
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2);
