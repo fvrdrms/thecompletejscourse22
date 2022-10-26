@@ -122,24 +122,24 @@
 //     console.log('Would you like to try again?');
 // }
 
-const hasDriversLicense = true;; // A
-const hasGoodVision = true; // B
+// const hasDriversLicense = true;; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-// console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// // console.log(!hasDriversLicense);
 
-// if (hasDriversLicense && hasGoodVision) {
+// // if (hasDriversLicense && hasGoodVision) {
+// //     console.log('Sarah is able to drive.');
+// // } else {
+// //     console.log('Someone else should drive.');
+// // }
+
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
 //     console.log('Sarah is able to drive.');
 // } else {
 //     console.log('Someone else should drive.');
 // }
-
-const isTired = false; // C
-console.log(hasDriversLicense && hasGoodVision && isTired);
-
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log('Sarah is able to drive.');
-} else {
-    console.log('Someone else should drive.');
-}
