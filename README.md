@@ -1,0 +1,1 @@
+My progress through The Complete JavaScript Course 2022 on Udemy.
