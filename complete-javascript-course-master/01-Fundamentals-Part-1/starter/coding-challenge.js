@@ -39,7 +39,6 @@
 // coding challenge 3
 
 const dolphinsScore = Math.round((97 + 112 + 123) / 3);
-
 const koalasScore = Math.round((109 + 95 + 106) / 3);
 
 console.log(dolphinsScore);
