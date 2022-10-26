@@ -38,14 +38,11 @@
 
 // coding challenge 3
 
-const dolphinsScore = 97 + 112 + 123;
+const dolphinsAvgScore = Math.round((97 + 112 + 123) / 3);
 
-const koalasScore = 109 + 95 + 106;
+const koalasAvgScore = Math.round((109 + 95 + 106) / 3);
 
-const dolphinsAvgScore = Math.round((dolphinsScore) / 3);
 console.log(dolphinsAvgScore);
-
-const koalasAvgScore = Math.round((koalasScore) / 3);
 console.log(koalasAvgScore);
 
 if (koalasAvgScore > dolphinsAvgScore && koalasAvgScore >= 100) {
