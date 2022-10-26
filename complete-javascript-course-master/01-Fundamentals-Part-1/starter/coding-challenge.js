@@ -52,7 +52,7 @@ if (koalasAvgScore > dolphinsAvgScore && koalasAvgScore >= 100) {
     console.log('Koalas win!');
 } else if (dolphinsAvgScore > koalasAvgScore && dolphinsAvgScore >= 100) {
     console.log('Dolphins win!');
-} else if (dolphinsAvgScore === koalasAvgScore && dolphinsAvgScore >= 100 || koalasAvgScore >= 100) {
+} else if (dolphinsAvgScore === koalasAvgScore && dolphinsAvgScore >= 100 && koalasAvgScore >= 100) {
     console.log("It's a tie!");
 } else {
     console.log('No team wins!');
