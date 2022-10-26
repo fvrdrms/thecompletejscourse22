@@ -112,6 +112,12 @@ if (favorite === 23) {
     console.log('Cool, 23 is an amazing number!');
 } else if (favorite === 7) {
     console.log('7 is also a cool number, I guess.');
+} else if (favorite === 000) {
+    console.log('Secret number? Dudes rock.')
 } else {
     console.log('Sorry, not a cool number!');
+}
+
+if (favorite != 23) {
+    console.log('Would you like to try again?');
 }

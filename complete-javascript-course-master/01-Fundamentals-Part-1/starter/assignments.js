@@ -41,8 +41,20 @@
 //     console.log(`${country}'s population is ${populationLess} million below average.`)
 // }
 
-console.log('9' - '5');
-console.log('19' - '13' + '17');
-console.log('19' - '13' + 17);
-console.log('123' < 57);
-console.log(5 + 6 + '4' + 9 - 4 - 2);
+// console.log('9' - '5');
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57);
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
+
+const numNeighbors = Number(prompt('How many neighbors does your country have?'));
+if (numNeighbors === 1) {
+    console.log('Only 1 neighbor!');
+} else if (numNeighbors > 1) {
+    console.log('More than 1 neighbors border!');
+} else {
+    console.log('No borders.');
+}
+
+// reflect on why you should use the === operator instead of ==
+// the reason is because, if we do not conver to a number, the prompt will store a string in the numNeighbors variable, and a string cannot be equal to a number without coercion
