@@ -59,13 +59,14 @@
 // reflect on why you should use the === operator instead of ==
 // the reason is because, if we do not conver to a number, the prompt will store a string in the numNeighbors variable, and a string cannot be equal to a number without coercion
 
-const country = prompt('What is the name of this country?');
-const countryLanguage = prompt('What language does this country speak ?');
-const countryPopulation = Number(prompt("What is this country's population (in millions)?"));
-const countryIsNotAnIsland = prompt('Is this country an island?');
+// const country = prompt('What is the name of this country?');
+// const countryLanguage = prompt('What language does this country speak ?');
+// const countryPopulation = Number(prompt("What is this country's population (in millions)?"));
+// const countryIsNotAnIsland = prompt('Is this country an island?');
 
-if (countryLanguage === 'English' && countryPopulation < 300 && countryIsNotAnIsland === 'no') {
-    console.log(`You should live in ${country}!`);
-} else {
-    console.log(`You should not live in ${country}`);
-}
+// if (countryLanguage === 'English' && countryPopulation < 300 && countryIsNotAnIsland === 'no') {
+//     console.log(`You should live in ${country}!`);
+// } else {
+//     console.log(`You should not live in ${country}`);
+// }
+

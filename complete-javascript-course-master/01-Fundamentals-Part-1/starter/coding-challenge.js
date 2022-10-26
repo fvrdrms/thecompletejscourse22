@@ -38,18 +38,18 @@
 
 // coding challenge 3
 
-const dolphinsScore = Math.round((97 + 112 + 123) / 3);
-const koalasScore = Math.round((109 + 95 + 106) / 3);
+// const dolphinsScore = Math.round((97 + 112 + 123) / 3);
+// const koalasScore = Math.round((109 + 95 + 106) / 3);
 
-console.log(dolphinsScore);
-console.log(koalasScore);
+// console.log(dolphinsScore);
+// console.log(koalasScore);
 
-if (koalasScore > dolphinsScore && koalasScore >= 100) {
-    console.log('Koalas win!');
-} else if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
-    console.log('Dolphins win!');
-} else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100) {
-    console.log("It's a tie!");
-} else {
-    console.log('No team wins!');
-}
+// if (koalasScore > dolphinsScore && koalasScore >= 100) {
+//     console.log('Koalas win!');
+// } else if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
+//     console.log('Dolphins win!');
+// } else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100) {
+//     console.log("It's a tie!");
+// } else {
+//     console.log('No team wins!');
+// }
