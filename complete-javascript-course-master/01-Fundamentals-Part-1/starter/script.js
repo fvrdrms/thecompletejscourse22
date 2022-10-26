@@ -79,22 +79,39 @@
 // 5 falsy values = 0, '', undefined, null, NaN
 // any other value is truthy and will be converted to true when converted to a boolean
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(''));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean({}));
+// console.log(Boolean(''));
 
-const money = 10;
+// const money = 10;
 
-if (money) {
-    console.log(`Don't spend it all.`);
-} else {
-    console.log(`You should get a job.`);
+// if (money) {
+//     console.log(`Don't spend it all.`);
+// } else {
+//     console.log(`You should get a job.`);
+// }
+// let height = 1;
+// if (height) {
+//     console.log(`Yay! Height is defined!`);
+// } else {
+//     console.log(`Height is undefined.`);
+// }
+
+// 2.22 equality operators
+
+const age = `18`;
+if (age === 18) console.log(`You just strictly became an adult`);
+if (age == 18) console.log(`You just loosely became an adult`);
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+
+if (favorite === 23) {
+    console.log('Cool, 23 is an amazing number!');
+} else if (favorite = 7) {
+    console.log('7 is also a cool number, I guess.');
 }
-let height = 1;
-if (height) {
-    console.log(`Yay! Height is defined!`);
-} else {
-    console.log(`Height is undefined.`);
-}
+
+// fix this bug
