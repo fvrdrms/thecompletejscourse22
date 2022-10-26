@@ -110,8 +110,8 @@ console.log(favorite);
 
 if (favorite === 23) {
     console.log('Cool, 23 is an amazing number!');
-} else if (favorite = 7) {
+} else if (favorite === 7) {
     console.log('7 is also a cool number, I guess.');
+} else {
+    console.log('Sorry, not a cool number!');
 }
-
-// fix this bug
