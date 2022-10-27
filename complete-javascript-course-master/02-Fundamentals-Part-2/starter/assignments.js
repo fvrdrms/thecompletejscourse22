@@ -27,3 +27,11 @@
 // const populationUnitedStates2 = percentageOfWorld2(332);
 // const populationPakistan2 = percentageOfWorld2(225);
 // console.log(populationChina2, populationPakistan2, populationUnitedStates2);
+
+// 3.35 arrow functions
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
+const populationChina3 = percentageOfWorld3(1441);
+const populationPakistan3 = percentageOfWorld3(225);
+const populationUnitedStates3 = percentageOfWorld3(332);
+console.log(populationChina3, populationPakistan3, populationUnitedStates3);
