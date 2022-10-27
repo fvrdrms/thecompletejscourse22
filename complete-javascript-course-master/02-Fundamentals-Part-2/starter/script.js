@@ -9,24 +9,39 @@
 // // const interface = 'Audio';
 // // const private = 524;
 
-function logger() {
-    console.log('My name is Jonas.');
+// function logger() {
+//     console.log('My name is Jonas.');
+// }
+
+// // calling, running, or invoking the function
+// logger();
+// logger();
+// logger();
+
+// function fruitProcessor(apples, oranges) {
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+// const num = Number('23');
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
 }
 
-// calling, running, or invoking the function
-logger();
-logger();
-logger();
+const age1 = calcAge1(1991);
+// console.log(age1);
 
-function fruitProcessor(apples, oranges) {
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
-
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
-
-const num = Number('23');
+const age2 = calcAge2(1991);
+console.log(age1);
+console.log(age2);
