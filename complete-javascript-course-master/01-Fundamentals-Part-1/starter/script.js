@@ -171,17 +171,25 @@ const day = 'Thursday';
 //         console.log('Not a valid day!');
 // }
 
-if (day === 'Monday') {
-    console.log('Plan course structure.');
-    console.log('Go to coding meetup.');
-} else if (day === 'Tuesday') {
-    console.log('Prepare theory videos.');
-} else if (day === 'Wednesday' || day === 'Thursday') {
-    console.log('Write code examples.');
-} else if (day === 'Friday') {
-    console.log('Record videos.');
-} else if (day === 'Saturday' || day === 'Sunday') {
-    console.log('Enjoy the weekend.');
-} else {
-    console.log('Not a valid day!');
-}
+// if (day === 'Monday') {
+//     console.log('Plan course structure.');
+//     console.log('Go to coding meetup.');
+// } else if (day === 'Tuesday') {
+//     console.log('Prepare theory videos.');
+// } else if (day === 'Wednesday' || day === 'Thursday') {
+//     console.log('Write code examples.');
+// } else if (day === 'Friday') {
+//     console.log('Record videos.');
+// } else if (day === 'Saturday' || day === 'Sunday') {
+//     console.log('Enjoy the weekend.');
+// } else {
+//     console.log('Not a valid day!');
+// }
+
+// 2.28 the condition (ternary) operator
+
+const age = 12;
+age >= 18 ? console.log('I like to drink wine.') : console.log('I like to drink water.');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink)
