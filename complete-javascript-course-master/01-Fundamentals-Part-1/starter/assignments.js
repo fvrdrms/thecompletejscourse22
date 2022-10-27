@@ -94,3 +94,8 @@
 //     default:
 //         console.log('Great language, I guess.');
 // }
+
+// The Conditional (Ternary) Operator assignment 2.27
+
+const population = 130
+population > 33 ? console.log("The population is above average.") : console.log("The population is below average.");
