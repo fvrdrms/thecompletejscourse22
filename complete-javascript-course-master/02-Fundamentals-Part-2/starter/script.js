@@ -31,17 +31,36 @@
 
 // const num = Number('23');
 
-function calcAge1(birthYear) {
-    return 2037 - birthYear;
-}
+// function calcAge1(birthYear) {
+//     return 2037 - birthYear;
+// }
 
-const age1 = calcAge1(1991);
+// const age1 = calcAge1(1991);
+// // console.log(age1);
+
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age2 = calcAge2(1991);
 // console.log(age1);
+// console.log(age2);
 
-const calcAge2 = function (birthYear) {
-    return 2037 - birthYear;
+// lesson 3.35 arrow functions
+
+// function expression
+
+// arrow function
+const calcage3 = birthYear => 2037 - birthYear;
+const age3 = calcage3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years.`
 }
 
-const age2 = calcAge2(1991);
-console.log(age1);
-console.log(age2);
+console.log(yearsUntilRetirement(1991, 'Nick'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
