@@ -70,3 +70,27 @@
 //     console.log(`You should not live in ${country}`);
 // }
 
+// assignment 2.26 the switch statement
+
+const language = 'Arabic';
+
+switch (language) {
+    case 'Chinese':
+    case 'Mandarin':
+        console.log('Most number of native speakers!');
+        break;
+    case 'Spanish':
+        console.log('2nd place number of native speakers.');
+        break;
+    case 'English':
+        console.log('3rd place.');
+        break;
+    case 'Hindi':
+        console.log('4th place.');
+        break;
+    case 'Arabic':
+        console.log('5th most spoken language.');
+        break;
+    default:
+        console.log('Great language, I guess.');
+}
