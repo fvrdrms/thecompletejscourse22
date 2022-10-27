@@ -12,3 +12,18 @@
 // console.log(descriptionMexico);
 // const descriptionEngland = describeCountry('England', 15, 'London');
 // console.log(descriptionEngland);
+
+// 3.34 function declarations vs expressions
+
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100
+}
+
+const percentageOfWorld2 = function (population) {
+    return (population / 7900) * 100
+}
+
+const populationChina2 = percentageOfWorld2(1441);
+const populationUnitedStates2 = percentageOfWorld2(332);
+const populationPakistan2 = percentageOfWorld2(225);
+console.log(populationChina2, populationPakistan2, populationUnitedStates2);
