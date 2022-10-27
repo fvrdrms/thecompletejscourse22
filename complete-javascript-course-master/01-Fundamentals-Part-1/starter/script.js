@@ -188,8 +188,10 @@ const day = 'Thursday';
 
 // 2.28 the condition (ternary) operator
 
-const age = 12;
-age >= 18 ? console.log('I like to drink wine.') : console.log('I like to drink water.');
+// const age = 12;
+// age >= 18 ? console.log('I like to drink wine.') : console.log('I like to drink water.');
 
-const drink = age >= 18 ? 'wine' : 'water';
-console.log(drink)
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink)
+
+// console.log(`I like to drink ${age >= 18 ? 'wine!' : 'water!'}`);

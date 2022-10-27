@@ -53,3 +53,7 @@
 // } else {
 //     console.log('No team wins!');
 // }
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+console.log(`The bill was $${bill.toFixed(2)}, the tip was $${tip.toFixed(2)}, and the total was $${(bill + tip).toFixed(2)}.`)
