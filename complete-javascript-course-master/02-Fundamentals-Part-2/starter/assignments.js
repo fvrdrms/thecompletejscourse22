@@ -39,15 +39,15 @@
 // 3.36 functions calling other functions
 
 
-const percentage = function (popPercentage) {
-    return Math.round((popPercentage / 7900) * 100);
-}
-const describePopulation = function (country, population) {
-    const popPercentage = percentage(population)
-    const description = `${country} has ${population} million people, which is about ${popPercentage}% of the world's people.`;
-    console.log(description);
-}
+// const percentage = function (popPercentage) {
+//     return Math.round((popPercentage / 7900) * 100);
+// }
+// const describePopulation = function (country, population) {
+//     const popPercentage = percentage(population)
+//     const description = `${country} has ${population} million people, which is about ${popPercentage}% of the world's people.`;
+//     console.log(description);
+// }
 
-describePopulation('United States', 300);
-describePopulation('India', 120000);
-describePopulation('Africa', 20);
+// describePopulation('United States', 300);
+// describePopulation('India', 120000);
+// describePopulation('Africa', 20);
