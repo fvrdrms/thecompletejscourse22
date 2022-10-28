@@ -30,8 +30,24 @@
 
 // 3.35 arrow functions
 
-const percentageOfWorld3 = population => (population / 7900) * 100;
-const populationChina3 = percentageOfWorld3(1441);
-const populationPakistan3 = percentageOfWorld3(225);
-const populationUnitedStates3 = percentageOfWorld3(332);
-console.log(populationChina3, populationPakistan3, populationUnitedStates3);
+// const percentageOfWorld3 = population => (population / 7900) * 100;
+// const populationChina3 = percentageOfWorld3(1441);
+// const populationPakistan3 = percentageOfWorld3(225);
+// const populationUnitedStates3 = percentageOfWorld3(332);
+// console.log(populationChina3, populationPakistan3, populationUnitedStates3);
+
+// 3.36 functions calling other functions
+
+
+const percentage = function (popPercentage) {
+    return Math.round((popPercentage / 7900) * 100);
+}
+const describePopulation = function (country, population) {
+    const popPercentage = percentage(population)
+    const description = `${country} has ${population} million people, which is about ${popPercentage}% of the world's people.`;
+    console.log(description);
+}
+
+describePopulation('United States', 300);
+describePopulation('India', 120000);
+describePopulation('Africa', 20);
