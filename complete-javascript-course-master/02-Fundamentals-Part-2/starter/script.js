@@ -78,19 +78,38 @@
 
 // console.log(fruitProcessor(2, 3));
 
-const calcAge1 = function (birthYear) {
-    return 2037 - birthYear;
-}
-const yearsUntilRetirement = function (birthYear, firstName) {
-    const age = calcAge1(birthYear);
-    const retirement = 65 - age;
-    if (retirement > 0) {
-        console.log(`${firstName} retires in ${retirement} years.`);
-        return retirement;
-    } else {
-        console.log(`${firstName} is already retired.`);
-        return -1;
-    }
-}
-yearsUntilRetirement(1991, 'Nick')
-yearsUntilRetirement(1912, 'Mike')
+// const calcAge1 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge1(birthYear);
+//     const retirement = 65 - age;
+//     if (retirement > 0) {
+//         console.log(`${firstName} retires in ${retirement} years.`);
+//         return retirement;
+//     } else {
+//         console.log(`${firstName} is already retired.`);
+//         return -1;
+//     }
+// }
+// yearsUntilRetirement(1991, 'Nick')
+// yearsUntilRetirement(1912, 'Mike')
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1992, 1984, 2008, 2022); // not the usual way to create an array
+console.log(years);
+
+console.log(friends[0]); // logs first element of array
+console.log(friends[2]); // logs third element of array
+
+console.log(friends.length); // exact amount of elements in the array
+console.log(friends[friends.length - 1]); // gives last element of array
+
+friends[2] = 'Jay';
+console.log(friends);
