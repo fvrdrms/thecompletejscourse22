@@ -68,11 +68,27 @@
 // ];
 // console.log(percentages);
 
-function percentageOfWorld1(population) {
-    return population / 7900 * 100;
-}
+// function percentageOfWorld1(population) {
+//     return population / 7900 * 100;
+// }
 
-const populationUS = percentageOfWorld1(390);
-const populationChina = percentageOfWorld1(1441);
-const populationMexico = percentageOfWorld1(130);
+// const populationUS = percentageOfWorld1(390);
+// const populationChina = percentageOfWorld1(1441);
+// const populationMexico = percentageOfWorld1(130);
+// console.log(populationUS, populationChina, populationMexico);
+
+// const percentageOfWorld2 = function (population) {
+//     return population / 7900 * 100;
+// }
+
+// const populationUS2 = percentageOfWorld2(390);
+// const populationChina2 = percentageOfWorld2(1441);
+// const populationMexico2 = percentageOfWorld2(130);
+// console.log(populationUS, populationChina2, populationMexico2);
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const populationUS = percentageOfWorld3(390);
+const populationChina = percentageOfWorld3(1441);
+const populationMexico = percentageOfWorld3(130);
 console.log(populationUS, populationChina, populationMexico);
