@@ -54,16 +54,25 @@
 
 // 3.39 introduction to arrays
 
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100
+// }
+
+// const populations = [200, 245, 98, 390];
+// console.log(populations.length === 4);
+// const percentages = [
+//     percentageOfWorld1(populations[0]),
+//     percentageOfWorld1(populations[1]),
+//     percentageOfWorld1(populations[2]),
+//     percentageOfWorld1(populations[3])
+// ];
+// console.log(percentages);
+
 function percentageOfWorld1(population) {
-    return (population / 7900) * 100
+    return population / 7900 * 100;
 }
 
-const populations = [200, 245, 98, 390];
-console.log(populations.length === 4);
-const percentages = [
-    percentageOfWorld1(populations[0]),
-    percentageOfWorld1(populations[1]),
-    percentageOfWorld1(populations[2]),
-    percentageOfWorld1(populations[3])
-];
-console.log(percentages);
+const populationUS = percentageOfWorld1(390);
+const populationChina = percentageOfWorld1(1441);
+const populationMexico = percentageOfWorld1(130);
+console.log(populationUS, populationChina, populationMexico);
