@@ -271,13 +271,63 @@
 
 // objects
 
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+
+// console.log(jonas);
+// console.log(jonas.lastName);
+
+
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
-    age: 2037 - 1991,
+    birthYear: 1991,
     job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    dlCheck: function () {
+        if (this.hasDriversLicense) {
+            this.licenseStatus = `does have a driver's license.`;
+            return this.licenseStatus;
+        } else {
+            this.licenseStatus = `does not have a driver's license.`;
+            return this.licenseStatus;
+        }
+    },
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function () {
+        console.log(`${this.firstName} is a ${this.calcAge()}-year-old ${this.job} and he ${this.dlCheck()}`);
+    }
 };
 
-console.log(jonas);
-console.log(jonas.lastName);
+// console.log(jonas.calcAge());
+
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// console.log(jonas);
+
+jonas.getSummary();
+
+
+
+// console.log(jonas['calcAge'](1991));
+// console.log(jonas['calcAge'](jonas.birthYear));

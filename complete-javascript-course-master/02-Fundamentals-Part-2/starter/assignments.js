@@ -138,11 +138,22 @@
 // neighbors[1] = 'Sweden';
 // console.log(neighbors);
 
-// const myCountry = {
-//     country: 'United States',
-//     capital: 'Washington, D.C.',
-//     language: 'English',
-//     population: 390,
-// }
+const myCountry = {
+    country: 'United States',
+    capital: 'Washington, D.C.',
+    language: 'English',
+    population: 390,
+    neighbors: ['Canada', 'Mexico'],
+    describe: function () {
+        this.description = `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}.`
+        return this.description;
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbors.length === 0 ? true : false
+    },
+}
 
-// console.log(myCountry);
+console.log(myCountry.describe());
+
+console.log(myCountry.checkIsland());
+console.log(myCountry)
