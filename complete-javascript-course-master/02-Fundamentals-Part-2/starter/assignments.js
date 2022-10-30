@@ -93,15 +93,29 @@
 // const populationMexico = percentageOfWorld3(130);
 // console.log(populationUS, populationChina, populationMexico);
 
-const calcPercentageOfWorld = population => Math.round((population / 7900) * 100);
+// const calcPercentageOfWorld = population => Math.round((population / 7900) * 100);
 
 
-function describePopulation(country, population) {
-    const percentageOfWorld = calcPercentageOfWorld(population);
-    const description = `${country} has ${population} million people, which is about ${percentageOfWorld}% of the world.`;
-    console.log(description);
-};
+// function describePopulation(country, population) {
+//     const percentageOfWorld = calcPercentageOfWorld(population);
+//     const description = `${country} has ${population} million people, which is about ${percentageOfWorld}% of the world.`;
+//     console.log(description);
+// };
 
-describePopulation('United States', 390);
-describePopulation('Pakistan', 225);
-describePopulation('China', 1441);
+// describePopulation('United States', 390);
+// describePopulation('Pakistan', 225);
+// describePopulation('China', 1441);
+
+function percWorld(population) {
+    return Math.round(population / 7900 * 100);
+}
+
+
+const populations = [390, 1441, 210, 120];
+
+if (populations.length === 4) {
+    console.log('true');
+}
+
+const percentages = [percWorld(populations[0]), percWorld(populations[1]), percWorld(populations[2]), percWorld(populations[3])];
+console.log(percentages);
