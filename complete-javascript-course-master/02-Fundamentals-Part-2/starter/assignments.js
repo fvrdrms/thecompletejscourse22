@@ -106,16 +106,16 @@
 // describePopulation('Pakistan', 225);
 // describePopulation('China', 1441);
 
-function percWorld(population) {
-    return Math.round(population / 7900 * 100);
-}
+// function percWorld(population) {
+//     return Math.round(population / 7900 * 100);
+// }
 
 
-const populations = [390, 1441, 210, 120];
+// const populations = [390, 1441, 210, 120];
 
-if (populations.length === 4) {
-    console.log('true');
-}
+// if (populations.length === 4) {
+//     console.log('true');
+// }
 
-const percentages = [percWorld(populations[0]), percWorld(populations[1]), percWorld(populations[2]), percWorld(populations[3])];
-console.log(percentages);
+// const percentages = [percWorld(populations[0]), percWorld(populations[1]), percWorld(populations[2]), percWorld(populations[3])];
+// console.log(percentages);
