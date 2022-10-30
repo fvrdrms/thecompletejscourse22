@@ -120,20 +120,29 @@
 // const percentages = [percWorld(populations[0]), percWorld(populations[1]), percWorld(populations[2]), percWorld(populations[3])];
 // console.log(percentages);
 
-const neighbors = ['Canada', 'Mexico'];
+// const neighbors = ['Canada', 'Mexico'];
 
-neighbors.push('Utopia');
-console.log(neighbors);
-neighbors.pop();
-console.log(neighbors);
+// neighbors.push('Utopia');
+// console.log(neighbors);
+// neighbors.pop();
+// console.log(neighbors);
 
-if (neighbors.includes('Germany')) {
-    console.log('Germany is a neighbor.');
-} else {
-    console.log('Probably not a central European country.');
-}
+// if (neighbors.includes('Germany')) {
+//     console.log('Germany is a neighbor.');
+// } else {
+//     console.log('Probably not a central European country.');
+// }
 
-console.log(neighbors.indexOf('Mexico'));
+// console.log(neighbors.indexOf('Mexico'));
 
-neighbors[1] = 'Sweden';
-console.log(neighbors);
+// neighbors[1] = 'Sweden';
+// console.log(neighbors);
+
+// const myCountry = {
+//     country: 'United States',
+//     capital: 'Washington, D.C.',
+//     language: 'English',
+//     population: 390,
+// }
+
+// console.log(myCountry);
