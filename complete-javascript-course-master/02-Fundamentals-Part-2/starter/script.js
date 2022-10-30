@@ -149,19 +149,32 @@
 
 // arrow functions
 
-birthYear => 2037 - birthYear;
+// birthYear => 2037 - birthYear;
 
-// store in variable to use !!!!!!
+// // store in variable to use !!!!!!
 
-const calcage3 = birthYear => 2037 - birthYear;
-const age3 = calcage3(1991);
-console.log(age3);
+// const calcage3 = birthYear => 2037 - birthYear;
+// const age3 = calcage3(1991);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirement = 65 - age;
-    // return retirement;
-    return `${firstName} retires in ${retirement} years.`;
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years.`;
+// }
+// console.log(yearsUntilRetirement(1991, "Nick"));
+// console.log(yearsUntilRetirement(1980, "Bob"));
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
 }
-console.log(yearsUntilRetirement(1991, "Nick"));
-console.log(yearsUntilRetirement(1980, "Bob"));
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    return juice;
+}
+
+fruitProcessor(2, 3);
