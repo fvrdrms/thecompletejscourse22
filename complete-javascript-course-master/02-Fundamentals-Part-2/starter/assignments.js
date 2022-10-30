@@ -138,11 +138,19 @@
 // neighbors[1] = 'Sweden';
 // console.log(neighbors);
 
-// const myCountry = {
-//     country: 'United States',
-//     capital: 'Washington, D.C.',
-//     language: 'English',
-//     population: 390,
-// }
+const myCountry = {
+    country: 'United States',
+    capital: 'Washington, D.C.',
+    language: 'English',
+    population: 390,
+    neighbors: ['Canada', 'Mexico']
+}
 
-// console.log(myCountry);
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries, and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+
