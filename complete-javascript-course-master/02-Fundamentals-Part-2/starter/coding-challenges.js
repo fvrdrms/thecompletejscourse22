@@ -48,3 +48,33 @@
 
 // const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 // console.log(total);
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'John',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    },
+}
+mark.calcBMI()
+console.log(mark.bmi)
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    },
+}
+john.calcBMI()
+console.log(john.bmi)
+
+function bmiCompare() 
+
+}

@@ -278,6 +278,7 @@
 //     job: 'teacher',
 //     friends: ['Michael', 'Peter', 'Steven']
 // };
+<<<<<<< HEAD
 
 // console.log(jonas);
 // console.log(jonas.lastName); // must use final property name in dot notation
@@ -327,3 +328,58 @@ friends.friendTwo = prompt('Who is your second friend?');
 friends.friendThree = prompt('What is your third friend?');
 
 console.log(`${friends.firstName}'s best friend is ${friends.bestFriend} and his other friends are ${friends.friendTwo} and ${friends.friendThree}.`);
+=======
+
+// console.log(jonas);
+// console.log(jonas.lastName);
+
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    dlCheck: function () {
+        if (this.hasDriversLicense) {
+            this.licenseStatus = `does have a driver's license.`;
+            return this.licenseStatus;
+        } else {
+            this.licenseStatus = `does not have a driver's license.`;
+            return this.licenseStatus;
+        }
+    },
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function () {
+        console.log(`${this.firstName} is a ${this.calcAge()}-year-old ${this.job} and he ${this.dlCheck()}`);
+    }
+};
+
+// console.log(jonas.calcAge());
+
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// console.log(jonas);
+
+jonas.getSummary();
+
+
+
+// console.log(jonas['calcAge'](1991));
+// console.log(jonas['calcAge'](jonas.birthYear));
+>>>>>>> 246fb35a628a1cb84e45804af3fc199fd6c6bff5
