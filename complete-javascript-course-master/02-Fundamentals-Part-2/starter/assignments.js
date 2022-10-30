@@ -119,3 +119,21 @@
 
 // const percentages = [percWorld(populations[0]), percWorld(populations[1]), percWorld(populations[2]), percWorld(populations[3])];
 // console.log(percentages);
+
+const neighbors = ['Canada', 'Mexico'];
+
+neighbors.push('Utopia');
+console.log(neighbors);
+neighbors.pop();
+console.log(neighbors);
+
+if (neighbors.includes('Germany')) {
+    console.log('Germany is a neighbor.');
+} else {
+    console.log('Probably not a central European country.');
+}
+
+console.log(neighbors.indexOf('Mexico'));
+
+neighbors[1] = 'Sweden';
+console.log(neighbors);
