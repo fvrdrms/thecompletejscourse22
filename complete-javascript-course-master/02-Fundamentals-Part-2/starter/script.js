@@ -390,23 +390,43 @@
 //     console.log(jonas[i], typeof jonas[i]);
 // }
 
-const jonas = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven'],
-];
+// const jonas = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven'],
+// ];
 
-// reverse loop
-for (let i = jonas.length - 1; i >= 0; i--) {
-    console.log(i, jonas[i], typeof jonas[i]);
-}
+// // reverse loop
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//     console.log(i, jonas[i], typeof jonas[i]);
+// }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`--- Starting exercise ${exercise} ---`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`--- Starting exercise ${exercise} ---`);
 
-    for (let rep = 1; rep < 6; rep++) {
-        console.log(`Lifting weights rep. ${rep}`);
-    }
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Lifting weights rep. ${rep}`);
+//     }
+// }
+
+// // for loop keeps running while condition is true
+// for (let rep = 1; rep <= 10; rep++) { // rep++ adds 1 to every iteration
+//     console.log(`Lifting weights repetition ${rep}.`);
+// };
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Lifting weights repetition ${rep}.`);
+//     rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}.`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('You rolled a 6! Loops is done.');
 }

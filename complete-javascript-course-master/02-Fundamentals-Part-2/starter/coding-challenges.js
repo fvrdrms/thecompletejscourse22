@@ -49,25 +49,25 @@
 // const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 // console.log(total);
 
-const mark = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        return this.bmi = this.mass / (this.height * this.height);
-    },
-}
-// console.log(mark.calcBMI());
+// const mark = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         return this.bmi = this.mass / (this.height * this.height);
+//     },
+// }
+// // console.log(mark.calcBMI());
 
-const john = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        return this.bmi = this.mass / (this.height * this.height);
-    },
-}
-console.log(john.calcBMI(), mark.calcBMI());
+// const john = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         return this.bmi = this.mass / (this.height * this.height);
+//     },
+// }
+// console.log(john.calcBMI(), mark.calcBMI());
 
 // if (john.bmi > mark.bmi) {
 //     console.log(`John's BMI (${john.bmi}) is higher than Mark's (${mark.bmi})!`);
@@ -77,5 +77,22 @@ console.log(john.calcBMI(), mark.calcBMI());
 //     console.log('Input errors, please check input data.');
 // }
 
-console.log(john.bmi > mark.bmi ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!` : `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
+// console.log(john.bmi > mark.bmi ? `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!` : `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
 
+
+// coding challenge 4
+// Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+}
+
+for (let i = 0; i < 10; i++) {
+    tips.push((calcTip(bills[i])));
+}
+
+console.log(tips);
