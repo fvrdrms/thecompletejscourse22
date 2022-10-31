@@ -91,8 +91,19 @@ const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < bills.length; i++) {
     tips.push((calcTip(bills[i])));
+    totals.push(bills[i] + tips[i]);
+    console.log(`Bill: ${bills[i]}, Tip: ${tips[i]}, Total: ${totals[i]}`);
 }
 
-console.log(tips);
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    console.log(sum);
+}
+
+
+calcAverage([2, 3, 6])
