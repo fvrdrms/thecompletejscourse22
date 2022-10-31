@@ -143,19 +143,6 @@ const myCountry = {
     capital: 'Washington, D.C.',
     language: 'English',
     population: 390,
-<<<<<<< HEAD
-    neighbors: ['Canada', 'Mexico']
-}
-
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries, and a capital called ${myCountry.capital}.`);
-
-myCountry.population += 2;
-console.log(myCountry.population);
-
-myCountry['population'] -= 2;
-console.log(myCountry.population);
-
-=======
     neighbors: ['Canada', 'Mexico'],
     describe: function () {
         this.description = `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}.`
@@ -170,4 +157,3 @@ console.log(myCountry.describe());
 
 console.log(myCountry.checkIsland());
 console.log(myCountry)
->>>>>>> 246fb35a628a1cb84e45804af3fc199fd6c6bff5

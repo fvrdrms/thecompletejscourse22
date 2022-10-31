@@ -278,57 +278,6 @@
 //     job: 'teacher',
 //     friends: ['Michael', 'Peter', 'Steven']
 // };
-<<<<<<< HEAD
-
-// console.log(jonas);
-// console.log(jonas.lastName); // must use final property name in dot notation
-// console.log(jonas['lastName']);
-
-// const nameKey = 'Name';
-// console.log(jonas['first' + nameKey]); // you could not do this in dot notation
-// console.log(jonas['last' + nameKey]);
-
-// // console.log(jonas.'last' + nameKey); // won't work
-
-// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
-// console.log(jonas[interestedIn]);
-
-// if (jonas[interestedIn]) {                      // truthy value
-//     console.log(jonas[interestedIn]);
-// } else {
-//     console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
-// }
-
-// jonas.location = 'Portugal';
-// jonas['twitter'] = '@jonasschmedtman';
-// console.log(jonas);
-
-// challenge
-// "Jonas has 3 friends, and his best friend is called Michael."
-
-// const jonas = {
-//     firstName: 'Jonas',
-//     bestFriend: 'Michael',
-//     friendTwo: 'David',
-//     friendThree: 'Peter'
-// }
-
-// console.log(`${jonas.firstName} has 3 friends, and his best friend is called ${jonas.bestFriend}.`)
-
-const friends = {
-    firstName: '',
-    bestFriend: '',
-    friendTwo: '',
-    friendThree: '',
-}
-
-friends.firstName = prompt('What is your first name?');
-friends.bestFriend = prompt('Who is your best friend?');
-friends.friendTwo = prompt('Who is your second friend?');
-friends.friendThree = prompt('What is your third friend?');
-
-console.log(`${friends.firstName}'s best friend is ${friends.bestFriend} and his other friends are ${friends.friendTwo} and ${friends.friendThree}.`);
-=======
 
 // console.log(jonas);
 // console.log(jonas.lastName);
@@ -382,4 +331,3 @@ jonas.getSummary();
 
 // console.log(jonas['calcAge'](1991));
 // console.log(jonas['calcAge'](jonas.birthYear));
->>>>>>> 246fb35a628a1cb84e45804af3fc199fd6c6bff5
