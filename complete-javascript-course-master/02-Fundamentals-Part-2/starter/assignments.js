@@ -164,15 +164,27 @@
 
 
 
-const populations = [390, 1441, 210, 120];
-const percentages2 = [];
+// const populations = [390, 1441, 210, 120];
+// const percentages2 = [];
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
 
-for (let i = 0; i < populations.length; i++) {
-    percentages2.push(percentageOfWorld1(populations[i]));
-}
+// for (let i = 0; i < populations.length; i++) {
+//     percentages2.push(percentageOfWorld1(populations[i]));
+// }
 
-console.log(percentages2);
+// console.log(percentages2);
+
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia'],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+    for (let y = 0; y < listOfNeighbours[i].length; y++)
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+console.log(listOfNeighbours.length);
