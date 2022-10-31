@@ -283,51 +283,60 @@
 // console.log(jonas.lastName);
 
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    birthYear: 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
-    dlCheck: function () {
-        if (this.hasDriversLicense) {
-            this.licenseStatus = `does have a driver's license.`;
-            return this.licenseStatus;
-        } else {
-            this.licenseStatus = `does not have a driver's license.`;
-            return this.licenseStatus;
-        }
-    },
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+//     dlCheck: function () {
+//         if (this.hasDriversLicense) {
+//             this.licenseStatus = `does have a driver's license.`;
+//             return this.licenseStatus;
+//         } else {
+//             this.licenseStatus = `does not have a driver's license.`;
+//             return this.licenseStatus;
+//         }
+//     },
 
-    // calcAge: function (birthYear) {
-    //     return 2037 - birthYear;
-    // }
+//     // calcAge: function (birthYear) {
+//     //     return 2037 - birthYear;
+//     // }
 
-    // calcAge: function () {
-    //     // console.log(this);
-    //     return 2037 - this.birthYear;
-    // }
-    calcAge: function () {
-        this.age = 2022 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function () {
-        console.log(`${this.firstName} is a ${this.calcAge()}-year-old ${this.job} and he ${this.dlCheck()}`);
-    }
-};
+//     // calcAge: function () {
+//     //     // console.log(this);
+//     //     return 2037 - this.birthYear;
+//     // }
+//     calcAge: function () {
+//         this.age = 2022 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         console.log(`${this.firstName} is a ${this.calcAge()}-year-old ${this.job} and he ${this.dlCheck()}`);
+//     }
+// };
 
-// console.log(jonas.calcAge());
+// // console.log(jonas.calcAge());
 
-// console.log(jonas.age);
-// console.log(jonas.age);
-// console.log(jonas.age);
+// // console.log(jonas.age);
+// // console.log(jonas.age);
+// // console.log(jonas.age);
 
-// console.log(jonas);
+// // console.log(jonas);
 
-jonas.getSummary();
+// jonas.getSummary();
 
 
 
 // console.log(jonas['calcAge'](1991));
 // console.log(jonas['calcAge'](jonas.birthYear));
+
+// console.log('Lifting weights repetition 1');
+
+
+// for loop keeps running while condition is true
+for (let rep = 1; rep <= 10; rep++) { // rep++ adds 1 to every iteration
+    console.log(`Lifting weights repetition ${rep}.`);
+};
+
